@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <div class="mx-auto shadow-2xl max-w-md mt-12 py-8 px-5 rounded-2xl">
+            <h1 class="text-4xl text-center mx-auto mb-5">Discount Calculator</h1>
+            <div>
+                <div class="mb-4">
+                    <label class="text-xl font-semibold" for="bill-field">Bill Amount:</label>
+                    <input class="w-full block px-4 py-2 rounded border border-gray-500 focus:outline-blue-700"
+                        type="text" name="" id="bill-field" placeholder="Enter bill amount">
+                </div>
+                <div class="mb-4">
+                    <label class="text-xl font-semibold" for="discount-rate-field">Discount Rate(%):</label>
+                    <input class="w-full block px-4 py-2 rounded border border-gray-500 focus:outline-blue-700"
+                        type="text" name="" id="discount-rate-field" placeholder="Enter discount rate">
+                    <input class="w-full px-4 py-2 rounded border border-gray-500 focus:outline-blue-700 mt-4"
+                        type="text" name="" id="discount-coupon-field" placeholder="Enter the discount code">
+                    <button id="discount-button"
+                        class="w-full bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg mt-4">Calculate
+                        Discount</button>
+                </div>
+                <div>
+                    <label class="text-xl font-semibold" for="bill-field">Discounted Amount:</label>
+                    <h1 class="w-full bg-blue-200 rounded px-4 py-2 text-4xl font-bold">$<span
+                            id="discounted-amount">00.0</span></h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- js -->
+    <script src=" js/discount.js"></script>
+</body>
+
+</html>
